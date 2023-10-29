@@ -2,98 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tr2</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
     
-    <div class="sidebar">
-        <div closs="logo-details">
-        <i class='bx bxt-c-plus-ptus icon'></i>
-        <div class="Logo_name">TR2</div>
-        <i class='bx bx-menu' id="btn"><i>
-    </div>
-    <ul closs="nav-List">
-        <li>
-            <i class='bx bx-search'></i>
-            <input tupe="text" ploceholder="search...">
-            <span class="tooltip">Search</span>
-        </li>
-        <li>
-            <a href="#">
-            <i class='bx bx-grid-alt'></i>
-            <span class="Links_name">Dashboard</span>
-            </a>
-            <span class="tooltip">Dashboard</span>
-        </li>
-        <li>
-           <a href="#">
-            <i class='bx bx-user'></i>
-            <span class="Links_name">User</span>
-           </a>
-           <span class="tooLtip">User</span>
-        </li>
-        <li>
-            <a href="#">
-                <i class='bx bx-chat'></i>
-                <span class="Links_name">Messages</span>   
-            </a>
-            <span class="tooLtip">Messages</span>
-        </li>
-        <li>
-            <a href="#">
-            <i class='bx bx-pie-chart-alt-2'></i>
-            <span class="Links_name">Analytics</span>
-            </a>
-            <span class="tooLtip">Analytics</span>
-        </li>
-        
-        <li>
-            <a href="#">
-                <i class='bx bx-folder'></i>
-                <span class="Links_name">File Manager</span>
-            </a>
-            <span class="tooLtip">Files</span>
-        </li>
+    <!---======== CSS ====-->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <li>
-            <a href="#">
-                <i class='bx bx-cart-alt'></i>
-                <span class="Links_name">Order</span>
-            </a>
-            <span class="tooLtip">Order</span>
-        </li>
+    
+<!---======== CSS ====-->
+    <title>Dashboard sidebar Menu / Dark-Light Mode</title>
+</head>
+<body> 
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="logo">
+                </span>
 
-        <li>
-            <a href="#">
-                <i class='bx bx-heart'></i>
-                <span class="Links_name">Saved</span>
-            </a>
-            <span class="tooLtip">Saved</span>
-        </li>
+                <div class="text header-text">
+                    <span class="name">Homters</span>
+                    <span class="profession">Web Developer</span>
+                </div>
+            </div>
 
-        <li>
-            <a href="#">
-                <i class='bx bx-cog'></i>
-                <span class="Links_name">Setting</span>
-            </a> 
-            <span class="tooLtip"Setting></span>
-        </li>
+            <i class='bx bx-chevron-right toggle' ></i>
+        </header>
+    
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class='bx bx-search icon' ></i>
+                            <input type="search" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="https://www.youtube.com/watch?v=KJanSdCEIyc">
+                            <i class='bx bx-home-circle icon '></i>
+                        <span class="text nav-text">QR CODE</span>
+                        </a>
+                    </li>   
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-bell icon '></i>
+                        <span class="text nav-text">Calculator</span>
+                        </a>
+                    </li>   
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-car icon '></i>
+                        <span class="text nav-text">Juegos</span>
+                        </a>
+                    </li>   
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-map icon '></i>
+                        <span class="text nav-text">Maps</span>
+                        </a>
+                    </li>   
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-male-female icon '></i>
+                        <span class="text nav-text">Pornhub</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <li class="profile">
-            <div class="profile-details">
-                <img src=" Your Imagen " alt="profileImg">
-                <div class="name-job">
-                    <div class="name"> Stella Army </div>
-                    <div class="job"> Web Designer </div>
-                </div>     
-            </div>   
-            <i class='bx bx-log-out' id="log_out"></i>
-        </li>
-    </ul>
-    </div>
-    <section class="home-section">
-        <div class="text">Dashboard</div>
-    </section>
+            <div class="botoom-content">
+                 <li class="nav-links">
+                    <a href="#">
+                        <i class='bx bx-log-out icon '></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                        <div class="moon-sun">
+                            <i class="bx bx-moon icon moon"></i>
+                            <i class="bx bx-sun icon sun"></i>
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+             
+                </div>
+            </div>
+        </nav>
+
+        <section class="home">
+            <div class="text">  Dashboard  </div>
+        </section>
+
+        <script src="script.js"></script>
+</body>
+</html>
